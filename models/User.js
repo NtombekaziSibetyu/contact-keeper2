@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-
+//create usser model
 const UserSchema = mongoose.Schema({
     name : {
         type :  String,
@@ -13,6 +13,10 @@ const UserSchema = mongoose.Schema({
     password : {
         type :  String,
         required : true
+    },
+    role:{
+        type : String,
+        default : "partner"
     },
     date : {
         type :  Date,

@@ -1,5 +1,6 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose"); //import mongoose
 
+//create the conttact model *Schema
 const ContactSchema = mongoose.Schema({
     user : {
         type : mongoose.Schema.Types.ObjectId,
