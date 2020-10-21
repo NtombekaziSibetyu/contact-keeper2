@@ -1,3 +1,4 @@
 {
-    "mongoURI" : "mongodb+srv://ntombekazi123:ntombekazi123@contact-keeper.61mdf.mongodb.net/test"
+    "mongoURI" : "mongodb+srv://ntombekazi123:ntombekazi123@contact-keeper.61mdf.mongodb.net/test",
+    "jwtSecret" : "secret"
 }
