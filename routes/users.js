@@ -3,8 +3,12 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const config = require('config');
+const auth = require('../middlewaare/auth')
 const { check, validationResult } = require("express-validator");
 const User = require("../models/User")
+
+
+
 
 //register a user route Post api/users public access
 router.post('/',
@@ -62,5 +66,7 @@ async (req, res) => {
        res.status(500).send('Server error')
    }
 });
+
+
 
 module.exports = router;
